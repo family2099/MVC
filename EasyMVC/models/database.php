@@ -1,70 +1,11 @@
 <?php
 header("content-type: text/html; charset=utf-8");
 
-// try {
-// $db = new PDO("mysql:host=localhost;dbname=ch30", "root", "");
-// // 資料庫使用 UTF8 編碼
-// $db->exec("SET CHARACTER SET utf8");
-// } 
-// catch (PDOException $e) {
-//     echo 'Error!: ' . $e->getMessage() . '<br />';
-// }
-/*$cmd = $pdo->prepare("select ProductID, ProductName, UnitPrice from products where productid = :pid lock in share mode");
-$cmd->bindValue(":pid", $id);
 
-$cmd->execute();
-$row = $cmd->fetch();
-echo "$id => {$row['ProductName']}"; */
-
-//撰寫注意事項
-
-// 如果用$this->方法或變數不用加$this
-//如果PDO有SQL的屬性變數盡量用$result->bindValue(1, $userName, PDO::PARAM_STR);或$result->bindParam(':id',$id,PDO::PARAM_INT);
-
-  
 class database
 {
 
-    protected $_dbms = "mysql";             //資料庫類型 
-    protected $_host = "localhost";         //資料庫ip位址
-    // protected $_port = "3306";           //資料庫埠
-    protected $_username = "root";          //資料庫用戶名
-    protected $_password = "";              //密碼
-    protected $_dbname = "test";            //資料庫名
-    // protected $_charset = 'utf-8';       //資料庫字元編碼
-    protected $_dsnconn;                    //data soruce name 資料來源
-
-/**
-*@return   返回資料來源名
-*/
-    /*-------------------------
-    預設先連資料庫
-    -------------------------*/
-    function __construct()
-    {
-        
-        try 
-        {
-                
-            //特別注意空格和單雙引號可能導致錯誤(天啊)
-    		$this->_dsnconn = new PDO($this->_dbms.':host='.$this->_host.';dbname='.$this->_dbname,$this->_username,$this->_password);
-    	   // echo $this->$_dsnconn;
-    		//echo self::$_dsnconn;不能用echo $statement variable as it is a PDOStatement Object會產生錯誤
-    		//Object of class Pdo Mysql Operator could not be converted to string
-    		// 資料庫使用 UTF8 編碼
-    		$this->_dsnconn->exec("SET CHARACTER SET utf8");
-    	    
-        	//var_dump(self::$_dsnconn);
-    		//echo "123";
-		} 
-		catch (PDOException $e) {
-		    
-			echo 'Error!: ' . $e->getMessage() . '<br />';
-		}
-        
-    
-    }
-    
+   
     /*-----------------------------------------------------
 	 讀取test資料庫的computer_books資料表總紀錄數
 	-----------------------------------------------------*/
