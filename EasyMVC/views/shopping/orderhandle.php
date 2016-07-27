@@ -1,6 +1,6 @@
 <?php
 header("content-type: text/html; charset=utf-8");
-//可根據GET的值來做判斷ORsession
+
 session_start();
 
 
@@ -59,11 +59,7 @@ session_start();
 							      </tr>
 							   	</thead>
 								<?php 
-										// var_dump($data[1]);
-										// exit;
-										// echo $data[0];
-										// echo $data[1][0]['order_index'];
-										// echo $data[1][0]['order_price'];
+									
 		 								if(isset($data[0]))
 										{	
 		 									for($i=0;$i<$data[0];$i++)

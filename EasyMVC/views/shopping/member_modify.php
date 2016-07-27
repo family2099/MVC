@@ -1,13 +1,13 @@
 <?php
-//可根據GET的值來做判斷
+
 session_start();
 
 
 
 
-// 取得這筆紀錄的 birthday 欄位值
+
 $date = getdate(strtotime($data['birthday']));
-// 設定 [年],[月],[日] 欄位
+
 $year = $date['year'];
 $month = $date['mon'];
 $day = $date['mday'];

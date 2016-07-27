@@ -4,7 +4,7 @@ class member_centerController extends Controller
 {
 
 //到member_modify頁面
-//
+
 
     function get_member_data()
     {
@@ -24,7 +24,7 @@ class member_centerController extends Controller
         
     }
 //去更新member_modify資料到資料庫
-//    
+ 
     function update_member_data()
     {
         if ((isset($_POST["update"])) && ($_POST["update"] == "member_info")) 
@@ -42,7 +42,7 @@ class member_centerController extends Controller
         }
     }
 //到orderhandle頁面
-//
+
    function to_orderhandle()
     {
         
@@ -60,6 +60,8 @@ class member_centerController extends Controller
         
         
     }
+    
+    
 //刪除訂單
     function delete_order()
     {
@@ -90,7 +92,7 @@ class member_centerController extends Controller
     	    $member_delete_order = $this->model("database");
     		
     		$result=$member_delete_order->get_order_list($q);
-    // 		header("Location:/EasyMVC/member_center/to_orderhandle");
+
     	}
         $this->view("order_list",$result);
         

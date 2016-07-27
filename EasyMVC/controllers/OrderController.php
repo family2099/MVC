@@ -151,7 +151,7 @@ class OrderController extends Controller
         
     }    
    /*--------------------------------------
-   check_order還未完工要清session
+   將購買清單和購買明細存入資料庫
    
    ------------------------------------------*/
    
@@ -180,9 +180,9 @@ class OrderController extends Controller
                 	
                     }
         		}
-        // 	if ($result) {
+        
         		header("Location:/EasyMVC/Order/clear_cart");
-        // 	}
+        
             }
         
         }

@@ -3,17 +3,7 @@ session_start();
 class IndexController extends Controller 
 {
     
-    /*function index() {
-        echo "home page of HomeController";
-    }*/
-    
-    // function hello($name) {
-    //     $user = $this->model("User");
-    //     $user->name = $name;
-    //     $this->view("Home/hello", $user);
-    //     // echo "Hello! $user->name";
-    // }
-    
+
     
     /*-----------------------------------------
     進入網頁要先顯示資料該方發就是進入index要顯是什麼的方法
@@ -235,10 +225,7 @@ class IndexController extends Controller
     function get_item_detail($q1)
     {
         
-        // echo $q1;
-        // exit;
-        // echo $_SESSION['database'];
-        // exit;
+
         if (isset($q1))
         {
           $field = $q1;
@@ -250,28 +237,7 @@ class IndexController extends Controller
         
         $data=$result;
        
-        // var_dump($data);
-        
-        // exit;
-        
-        
-        
-        
-        
-        // $data=Array();
-        // // $data[]=Array();
-        // //目前頁數
-        // $data[0]=$page;
-        // //computer_book全部資料筆數
-        // $data[1]=$totalrecord;
-        // //computer_book資料產生的總頁數
-        // $data[2]=$totalPages;
-        // //目前資料的筆數
-        // $data[3]=$get_computer_books_ten_record[0];
-        // //結果集
-        // $data[4]=$get_computer_books_ten_record[1];
-        // var_dump($data[4]);
-        // exit;
+
         $this->view("item_detail",$data);
     
     }
@@ -300,6 +266,4 @@ class IndexController extends Controller
 }
 
 
-
-// $obj=
 ?>

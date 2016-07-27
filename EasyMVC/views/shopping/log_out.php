@@ -4,7 +4,7 @@
 
 
 //-------------------------------
-// 清除帳號與層級
+// 清除所有SESSION資料
 //-------------------------------
 	// 使用者的名稱
 	$_SESSION['username'] = NULL;
@@ -14,8 +14,8 @@
 	unset($_SESSION['usergroup']);
 	//當登入前的前一瀏覽頁面
 	
-	
-	// unset($_SESSION['decidelogincount']);
+	//清除判斷是否第一次登入
+	unset($_SESSION['decidelogincount']);
 
 	$_SESSION['item']['item_index'] = NULL;
 	unset($_SESSION['item']['item_index']);

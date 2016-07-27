@@ -1,6 +1,6 @@
 <?php
 header("content-type: text/html; charset=utf-8");
-//可根據GET的值來做判斷ORsession
+
 session_start();
 
   

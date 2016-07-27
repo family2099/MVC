@@ -95,17 +95,7 @@
 
 							</ul>
 						</div>
-						<!-- 		<button type="button" class="list-group-item" id="computer">電腦圖書</button>-->
-						<!--	<div id="showcomputer">-->
-
-						<!--	    <ul>-->
-						<!--	      <li>List item one</li>-->
-						<!--	      <li>List item two</li>-->
-						<!--	      <li>List item three</li>-->
-						<!--	    </ul>-->
-						<!--  	</div>-->
-						<!--<button type="button" class="list-group-item"></button>-->
-						<!--<button type="button" class="list-group-item"></button>-->
+						
 
 
 					</div>
