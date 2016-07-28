@@ -1,0 +1,6 @@
+[27-Jul-2016 02:42:31 UTC] PHP Warning:  Missing argument 1 for IndexController::get_Index() in /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php on line 23
+[27-Jul-2016 02:42:31 UTC] PHP Stack trace:
+[27-Jul-2016 02:42:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[27-Jul-2016 02:42:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:6
+[27-Jul-2016 02:42:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[27-Jul-2016 02:42:31 UTC] PHP   4. IndexController->get_Index() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
