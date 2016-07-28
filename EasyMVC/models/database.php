@@ -1,25 +1,7 @@
 <?php
 header("content-type: text/html; charset=utf-8");
 
-// try {
-// $db = new PDO("mysql:host=localhost;dbname=ch30", "root", "");
-// // 資料庫使用 UTF8 編碼
-// $db->exec("SET CHARACTER SET utf8");
-// } 
-// catch (PDOException $e) {
-//     echo 'Error!: ' . $e->getMessage() . '<br />';
-// }
-/*$cmd = $pdo->prepare("select ProductID, ProductName, UnitPrice from products where productid = :pid lock in share mode");
-$cmd->bindValue(":pid", $id);
 
-$cmd->execute();
-$row = $cmd->fetch();
-echo "$id => {$row['ProductName']}"; */
-
-//撰寫注意事項
-
-// 如果用$this->方法或變數不用加$this
-//如果PDO有SQL的屬性變數盡量用$result->bindValue(1, $userName, PDO::PARAM_STR);或$result->bindParam(':id',$id,PDO::PARAM_INT);
 
   
 class database

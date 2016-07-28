@@ -1,6 +1,8 @@
 <?php 
 
-
+/********************************
+ * 只剩這頁還未修改完成MVC
+ *******************************/
 
 
 session_start();
@@ -18,8 +20,7 @@ $index2 = $data[1];//陣列編號
 
 // 作用資料表的名稱
 $_SESSION['database'] = $database[$index1];
-// echo $_SESSION['database'];
-//echo $_SESSION['database'];
+
 // 電腦圖書, 教育軟體, 商用軟體
 $_SESSION['category'] = $category[$index1];
 // 網頁設計, 程式語言, 多媒體系列
@@ -97,8 +98,8 @@ $rowsPerPage = 10;
 
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+
 <head>
   <meta charset="utf-8">
 	<!---PS:其他js檔都要放JQUERY後面要不其他js檔先執行會錯誤--->

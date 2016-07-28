@@ -45,8 +45,8 @@
 				<div class="loginmodal-container">
 					<h1>登入您的帳號</h1><br>
 					<form action="/EasyMVC/Index/get_login_data" method="post">
-						<input type="text" name="userN" id="username" pattern="[A-Za-z0-9]{3,20}" required="true" placeholder="Username" />
-						<input type="password" name="passW" id="password" pattern="[A-Za-z0-9]{3,20}" required="true" placeholder="Password" />
+						<input type="text" name="userN" id="username" pattern="[A-Z a-z 0-9]{3,20}" required="true" placeholder="Username" />
+						<input type="password" name="passW" id="password" pattern="[A-Z a-z 0-9]{3,20}" required="true" placeholder="Password" />
 						<input type="submit" name="login" class="login loginmodal-submit" value="Login" >
 					</form>
 					<div class="login-help">

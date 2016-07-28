@@ -2,23 +2,11 @@
 
 session_start();
 
-
-
-
-
 $date = getdate(strtotime($data['birthday']));
 
 $year = $date['year'];
 $month = $date['mon'];
 $day = $date['mday'];
-
-
-
-
-
-
-
-
 
 ?>
 
