@@ -1,7 +1,7 @@
 <?php
 header("content-type: text/html; charset=utf-8");
 
-
+//Session都在modles處理
 
   
 class database
