@@ -14,14 +14,6 @@ class dbconfig
 
 
 
-    // public $_dbms = "mysql";             //資料庫類型 
-    // public $_host = "localhost";         //資料庫ip位址
-    // public $_port = "3306";           //資料庫埠
-    // public $_username = "root";          //資料庫用戶名
-    // public $_password = "";              //密碼
-    // public $_dbname = "test";            //資料庫名
-    // public $_charset = "utf-8";       //資料庫字元編碼
-    // public $_dsnconn;  
 
 
     /*-------------------------
