@@ -4,7 +4,7 @@ require_once("dbconfig.php");
 
 
    
-//Session都在modles處理
+
 
   
 class database extends dbconfig
