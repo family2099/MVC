@@ -1,12 +1,21 @@
 <?php
-header("content-type: text/html; charset=utf-8");
 
 
-
+<<<<<<< HEAD
 class database
 {
 
    
+=======
+//Session都在modles處理
+require_once("dbconfig.php");
+  
+class database extends dbconfig
+{
+
+
+
+>>>>>>> version2
     /*-----------------------------------------------------
 	 讀取test資料庫的computer_books資料表總紀錄數
 	-----------------------------------------------------*/
@@ -24,7 +33,7 @@ class database
     		// 結果集的記錄筆數
     		$totalRows = $result->rowCount();
     		// 總頁數,ceil() 函數向上捨入為最接近的整數(就是有小數點就直接進位)。
-    // 		$totalPages = ceil($totalRows / $rowsPerPage);
+            //$totalPages = ceil($totalRows / $rowsPerPage);
     		//echo $totalRows;
     	}
     	
@@ -168,7 +177,7 @@ class database
         $result = $this->_dsnconn->prepare($query);
         
         $result->bindValue(1, $data_category, PDO::PARAM_STR);
-        $result->bindValue(1, $data_category_type, PDO::PARAM_STR);
+        $result->bindValue(2, $data_category_type, PDO::PARAM_STR);
         $result->execute();
         if($result)
     	{
@@ -237,24 +246,68 @@ class database
     }
     
     
-    // function get_book_data()
+    // function get_category_page($q1="",$q2="",$c1) 
     // {
+    //     $page = 0;
+    //     $rowsPerPage = 10;
+    //     $database = array("computer_books", "education_software", "commerical_software");
+    //     $category = array("電腦圖書", "教育軟體", "商用軟體");
+    //     $category_type = array(0 => array("網頁設計","程式語言","多媒體系列"), 
+    //     	1 => array("影像多媒體","電腦繪圖","工具軟體"), 2 => array("作業系統","防毒防駭","文書處理"));
+                
+    //     if ((isset($q1)) and (isset($q2)) and $c1) 
+    //     {
+    //         // $data=Array();
+    //         // $data[0]=$q1;
+    //         // $data[1]=$q2;
+    //         $page = $c1;
+    //         $index1 = $q1;//資料庫編號
+    //         $index2 = $q2;//陣列編號
+            
+    //         $_SESSION['database'] = $database[$index1];
+    //         $_SESSION['category'] = $category[$index1];
+    //         $_SESSION['category_type'] = $category_type[$index1][$index2];
+            
+            
+            
+    //         $get_category_data = $this->model("database");
+    //         $totalRows=$get_category_data->get_category_Rows($_SESSION['database'],$_SESSION['category'],$_SESSION['category_type']);
+            
+    //         $totalPages = ceil($totalRows / $rowsPerPage);
+    //         $startRow = $page * $rowsPerPage;
+            
+    //         $get_category_ten_record=$this->model("database");
+            
+    //         $result=$get_category_ten_record->get_category_ten_data($_SESSION['database'],$_SESSION['category'],$_SESSION['category_type'],$startRow,$rowsPerPage);
+            
+            
+    //         $data=Array();
+    //         // $data[]=Array();
+    //         //目前頁數
+    //         $data[0]=$page;
+    //         //computer_book全部資料筆數
+    //         $data[1]=$totalrecord;
+    //         //computer_book資料產生的總頁數
+    //         $data[2]=$totalPages;
+    //         //目前資料的筆數
+    //         $data[3]=$result[0];
+    //         //結果集
+    //         $data[4]=$result[1];
+    //         // var_dump($data[4]);
         
         
-    //     $query = "SELECT * FROM " . $_SESSION['database'] .  
-    //   	" WHERE category = '" . $_SESSION['category'] . "' AND " . 
-    //   	" category_type = '" . $_SESSION['category_type'] . "' ORDER BY publishdate DESC";
-    	
-    // 	$result = $db->prepare($query);
-    //     $result->execute();    
-    //     if($result)
-    // 	{
-    // 		// 結果集的記錄筆數
-    // 		$totalRows = $result->rowCount();
-    // 		// 總頁數,ceil() 函數向上捨入為最接近的整數(就是有小數點就直接進位)。
-    // 		$totalPages = ceil($totalRows / $rowsPerPage);
-    // 		//echo $totalRows;
-    // 	}
+            
+            
+    //         $this->view("category_result",$data);
+            
+    //     }
+    //     else 
+    //     {
+    //         $this->get_Index();
+            	  
+            
+    //     }
+            
         
     // }
 //---------------------------------------------------------------------------------------------    
