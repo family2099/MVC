@@ -1,21 +1,17 @@
 <?php
 
+require_once("dbconfig.php");
 
-<<<<<<< HEAD
-class database
-{
 
    
-=======
 //Session都在modles處理
-require_once("dbconfig.php");
+
   
 class database extends dbconfig
 {
 
 
 
->>>>>>> version2
     /*-----------------------------------------------------
 	 讀取test資料庫的computer_books資料表總紀錄數
 	-----------------------------------------------------*/
