@@ -4,29 +4,6 @@
  * 只剩這頁還未修改完成MVC
  *******************************/
 
-
-session_start();
-
-	
-$database = array("computer_books", "education_software", "commerical_software");
-$category = array("電腦圖書", "教育軟體", "商用軟體");
-$category_type = array(0 => array("網頁設計","程式語言","多媒體系列"), 
-	1 => array("影像多媒體","電腦繪圖","工具軟體"), 2 => array("作業系統","防毒防駭","文書處理"));
-
-$index1 = $data[0];//資料庫編號
-$index2 = $data[1];//陣列編號
-
-//echo $index1;
-
-// 作用資料表的名稱
-$_SESSION['database'] = $database[$index1];
-
-// 電腦圖書, 教育軟體, 商用軟體
-$_SESSION['category'] = $category[$index1];
-// 網頁設計, 程式語言, 多媒體系列
-$_SESSION['category_type'] = $category_type[$index1][$index2];
-?>
-<?php
 //---------------------------------------------------------
 // 讀取資料庫的 $_SESSION['database'] 資料表的全部紀錄
 //---------------------------------------------------------
