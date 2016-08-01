@@ -7,5 +7,5 @@ require_once 'core/App.php';
 require_once 'core/Controller.php';
 
 $app = new App();
-echo 1231;
+// echo 1231;
 ?>

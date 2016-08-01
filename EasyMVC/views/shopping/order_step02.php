@@ -76,7 +76,7 @@
 
                         <tr>
                           <td>
-                            <form action="/EasyMVC/Order/to_order_step03" method="post" class="order_step03_style15">
+                            <form action="/MVC/EasyMVC/Order/to_order_step03" method="post" class="order_step03_style15">
                               <!-- ------------------------ -->
                               <!--      顯示購物車內的商品    -->
                               <!-- ------------------------ -->
@@ -191,7 +191,7 @@
                               <table class="order_step03_style7">
                                 <tr>
                                   <td class="order_step03_style29">
-                                    <input type="button" value="上一步" onclick="document.location='/EasyMVC/Order/to_order_step01'; return false;" />
+                                    <input type="button" value="上一步" onclick="document.location='/MVC/EasyMVC/Order/to_order_step01'; return false;" />
                                   </td>
                                   <td class="order_step03_style30">
                                     <input name="order_nextstep" id="order_nextstep" type="submit" value="下一步" />

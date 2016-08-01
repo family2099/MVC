@@ -69,7 +69,7 @@ Resources that might pose a security risk (such as scripts and fonts) must be lo
 
                 <tr>
                   <td>
-                    <form action="/EasyMVC/Order/to_order_step02" method="post" class="order_step01_style16">
+                    <form action="/MVC/EasyMVC/Order/to_order_step02" method="post" class="order_step01_style16">
                       <table class="order_step01_style7">
                         <tr>
                           <td class="order_step01_style8">》臨時購物車</td>
@@ -176,7 +176,7 @@ Resources that might pose a security risk (such as scripts and fonts) must be lo
                   									  } 
                   								  ?>
                                           <td class="order_step01_style28">
-                                          <input type="button" value="繼續購物" class="order_step01_style29" onclick="document.location='/EasyMVC/Index/get_Index/0'" />
+                                          <input type="button" value="繼續購物" class="order_step01_style29" onclick="document.location='/MVC/EasyMVC/Index/get_Index/0'" />
                                     <?php 
                   									  // 購物車內有商品
                   									  if(isset($_SESSION['username']) && $_SESSION['has_item']) 

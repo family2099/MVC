@@ -106,7 +106,7 @@ Resources that might pose a security risk (such as scripts and fonts) must be lo
           
                         <tr>
                           <td>
-                            <form action="/EasyMVC/Order/check_order" method="post" class="order_step03_style15">
+                            <form action="/MVC/EasyMVC/Order/check_order" method="post" class="order_step03_style15">
                               <!-- ------------------------ -->
                               <!--      顯示購物車內的商品    -->
                               <!-- ------------------------ -->
@@ -190,7 +190,7 @@ Resources that might pose a security risk (such as scripts and fonts) must be lo
                               <table class="order_step03_style7">
                                 <tr>
                                   <td class="order_step03_style29">
-                                    <input type="button" value="上一步" onclick="document.location='/EasyMVC/Order/back_order_step02'; return false;" />
+                                    <input type="button" value="上一步" onclick="document.location='/MVC/EasyMVC/Order/back_order_step02'; return false;" />
                                   </td>
                                   <td class="order_step03_style30">
                                     <input type="submit" value="確認付款" />

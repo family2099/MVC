@@ -9,14 +9,11 @@ class member_centerController extends Controller
     function get_member_data()
     {
         
-        if (isset($_SESSION['username'])) 
-        {
-          $username = $_SESSION['username'];
-        } 
+        
         
         $get_member_data = $this->model("database");
         
-        $result=$get_member_data->member_data($username);
+        $result=$get_member_data->member_data();
         // var_dump($result);
         // exit;
         $this->view("member_modify",$result);
@@ -30,13 +27,13 @@ class member_centerController extends Controller
         if ((isset($_POST["update"])) && ($_POST["update"] == "member_info")) 
         {
         
-            $_SESSION['username'] = $_POST['username'];
+            
             
             $updata_member_data = $this->model("database");
             
             $updata_member_data->member_updata($_POST['username'],$_POST['password'],$_POST['name'],$_POST['sex'],$_POST['birthday'],$_POST['email'],$_POST['phone'],$_POST['address'],$_POST['uniform'],$_POST['unititle'],$_POST['userlevel'],$_POST['id']);
             
-            header("Location:/EasyMVC/Index/get_member_center");
+            header("Location:/MVC/EasyMVC/Index/get_member_center");
             
         
         }
@@ -46,14 +43,10 @@ class member_centerController extends Controller
    function to_orderhandle()
     {
         
-        if (isset($_SESSION['username'])) 
-        {
-          $username = $_SESSION['username'];
-        } 
         
         $get_select_order = $this->model("database");
         
-        $result=$get_select_order->member_select_order($username);
+        $result=$get_select_order->member_select_order();
         // var_dump($result[1]);
         // exit;
         $this->view("orderhandle",$result);
@@ -73,7 +66,7 @@ class member_centerController extends Controller
     	   // exit;
     		$exe_delete_order = $this->model("database");
     		$result=$exe_delete_order->member_delete_order($_POST['order_index']);
-    		header("Location:/EasyMVC/member_center/to_orderhandle");
+    		header("Location:/MVC/EasyMVC/member_center/to_orderhandle");
     	}
         
         

@@ -68,10 +68,10 @@ session_start();
 												
 		 						?>
 		 										<!--//表單問題讓他每次FORM一組,就可以傳不同的值-->
-												<form action="/EasyMVC/member_center/delete_order" method="post">
+												<form action="/MVC/EasyMVC/member_center/delete_order" method="post">
 					 							
 								 				<tr>
-								 					<td><a href="/EasyMVC/member_center/order_list/<?php echo $data[1][$i]['order_index']; ?>"><?php echo $data[1][$i]['order_index']; ?></a></td>
+								 					<td><a href="/MVC/EasyMVC/member_center/order_list/<?php echo $data[1][$i]['order_index']; ?>"><?php echo $data[1][$i]['order_index']; ?></a></td>
 								 					<td><?php echo $data[1][$i]['order_price']?></td>
 								 					<td><?php echo $data[1][$i]['payment']?></td>
 								 					<td><?php echo $data[1][$i]['order_date']?></td>

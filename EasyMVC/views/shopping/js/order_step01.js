@@ -3,7 +3,7 @@ function clearCart()
 {
 	if (confirm("您確定要清空購物車嗎?"))
 	{
-		location.href = "/EasyMVC/Order/clear_cart";
+		location.href = "/MVC/EasyMVC/Order/clear_cart";
 	}	
 		
 	return false;

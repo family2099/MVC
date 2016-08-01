@@ -48,7 +48,7 @@ session_start();
 					<div class="panel-body">
 						<div class="row">
 				    		
-				    			<a class="btn btn-danger btn-block" href="/EasyMVC/member_center/get_member_data" role="button">會員資料管理</a>
+				    			<a class="btn btn-danger btn-block" href="/MVC/EasyMVC/member_center/get_member_data" role="button">會員資料管理</a>
 				    	
 				    	</div>
 					</div>
@@ -66,7 +66,7 @@ session_start();
 				  <div class="panel-body">
 						<div class="row">
 				    		
-				    			<a class="btn btn-warning btn-block" href="/EasyMVC/member_center/to_orderhandle" role="button">訂單查詢</a>
+				    			<a class="btn btn-warning btn-block" href="/MVC/EasyMVC/member_center/to_orderhandle" role="button">訂單查詢</a>
 				    		
 				    	</div>
 				  </div>

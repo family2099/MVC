@@ -152,7 +152,7 @@
 									</td>
 									<td class="item_detail_style6">
 										<br>
-										<a href="/EasyMVC/Index/add_to_cart/<?php echo $data['id']; ?>" class="btn btn-info btn-lg cardata" role="button">加入購物車</a>
+										<a href="/MVC/EasyMVC/Index/add_to_cart/<?php echo $data['id']; ?>" class="btn btn-info btn-lg cardata" role="button">加入購物車</a>
 
 
 										<br>

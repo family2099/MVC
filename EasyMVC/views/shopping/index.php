@@ -49,9 +49,9 @@
 
 							<!-- List group -->
 							<ul class="list-group" id="showcomp">
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/0/0" class="computer">網頁設計</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/0/1" class="computer">程式語言</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/0/2" class="computer">多媒體系列</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/0/0/0" class="computer">網頁設計</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/0/1/0" class="computer">程式語言</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/0/2/0" class="computer">多媒體系列</a></li>
 
 							</ul>
 						</div>
@@ -63,9 +63,9 @@
 
 							<!-- List group -->
 							<ul class="list-group" id="showedu">
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/1/0" class="education">影像多媒體</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/1/1" class="education">電腦繪圖</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/1/2" class="education">工具軟體</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/1/0/0" class="education">影像多媒體</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/1/1/0" class="education">電腦繪圖</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/1/2/0" class="education">工具軟體</a></li>
 
 							</ul>
 						</div>
@@ -77,9 +77,9 @@
 
 							<!-- List group -->
 							<ul class="list-group" id="showbus">
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/2/0" class="business">作業系統</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/2/1" class="business">防毒防駭</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/2/2" class="business">文書處理</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/2/0/0" class="business">作業系統</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/2/1/0" class="business">防毒防駭</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/2/2/0" class="business">文書處理</a></li>
 
 							</ul>
 						</div>
@@ -112,11 +112,11 @@
 									
 									<tr>
 											<span >
-												<a href="/EasyMVC/Index/get_item_detail/<?php echo $data[4][$i]['id']; ?>"><img src="<?php echo '/EasyMVC/views/shopping/photo/item/' . $data[4][$i]['photo']; ?>" width="120" height="145" /></a>
+												<a href="/MVC/EasyMVC/Index/get_item_detail/<?php echo $data[4][$i]['id']; ?>"><img src="<?php echo '/EasyMVC/views/shopping/photo/item/' . $data[4][$i]['photo']; ?>" width="120" height="145" /></a>
 											</span >
 											<br />
 											<span >
-												<a href="/EasyMVC/Index/get_item_detail/<?php echo $data[4][$i]['id']; ?>" >
+												<a href="/MVC/EasyMVC/Index/get_item_detail/<?php echo $data[4][$i]['id']; ?>" >
 												<?php echo mb_substr($data[4][$i]['title'],0,12,"utf-8");  ?>
 												</a>
 											</span >
@@ -143,7 +143,7 @@
 						                        <?php echo $data[4][$i]['saleprice']; ?> 元
 					                      	</span>
 											<br />
-											<a href="/EasyMVC/Index/add_to_cart/<?php echo $data[4][$i]['id']; ?>" class="btn btn-danger btn-lg" role="button">放入購物車</a>
+											<a href="/MVC/EasyMVC/Index/add_to_cart/<?php echo $data[4][$i]['id']; ?>" class="btn btn-danger btn-lg" role="button">放入購物車</a>
 											
 										</td>
 									</tr>
@@ -164,7 +164,7 @@
 				<table class="index_style4">
 				    <tr>
 				      <td class="index_style5">
-				        資料筆數 ： <?php echo $data[1] ?> 
+				        資料筆數 ： <?php echo $data[1]; ?> 
 				      </td>
 				      <td class="index_style5">
 				        共分 <?php echo $data[2]; ?> 頁
@@ -177,7 +177,7 @@
 							if ($data[0] > 0) 
 							{
 						?>
-				            <a href="/EasyMVC/Index/get_Index/0" class="index_style7">首頁 /</a>
+				            <a href="/MVC/EasyMVC/Index/get_Index/0" class="index_style7">首頁 /</a>
 						<?php 
 							}
 						?>
@@ -186,16 +186,16 @@
 							{
 						?>
 							 <!--max() 返回最大值 -->
-				            <a href="/EasyMVC/Index/get_Index/<?php echo max(0, $page - 1); ?>" class="index_style7">上頁 /</a>        
+				            <a href="/MVC/EasyMVC/Index/get_Index/<?php echo max(0, $data[0] - 1); ?>" class="index_style7">上頁 /</a>        
 				        <?php 
 							}
 						?>
-								第 <?php echo $page + 1; ?> 頁
+								第 <?php echo $data[0] + 1; ?> 頁
 			    		<?php 
 							if ($data[0] < $data[2] - 1) 
 							{				
 						?>
-				            <a href="/EasyMVC/Index/get_Index/<?php echo min($data[2] - 1, $page + 1); ?>" class="index_style7"> / 下頁</a>
+				            <a href="/MVC/EasyMVC/Index/get_Index/<?php echo min($data[2] - 1, $data[0] + 1); ?>" class="index_style7"> / 下頁</a>
 				        <?php 
 							}
 						?>
@@ -203,7 +203,7 @@
 						  if ($data[0] < $data[2] - 1) 
 						  {				
 						?>
-				            <a href="/EasyMVC/Index/get_Index/<?php echo ($data[2] - 1); ?>" class="index_style7"> / 末頁</a>
+				            <a href="/MVC/EasyMVC/Index/get_Index/<?php echo ($data[2] - 1); ?>" class="index_style7"> / 末頁</a>
 				        <?php 
 							}
 						?>

@@ -14,3 +14,114 @@
 [29-Jul-2016 04:30:57 UTC] PHP   4. IndexController->get_Index() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
 [29-Jul-2016 04:30:57 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:31
 [29-Jul-2016 04:30:57 UTC] PHP   6. dbconfig->__construct() /home/ubuntu/workspace/MVC/EasyMVC/core/Controller.php:8
+[01-Aug-2016 02:11:33 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 418
+[01-Aug-2016 02:11:33 UTC] PHP Stack trace:
+[01-Aug-2016 02:11:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:11:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:11:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:11:33 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:11:33 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:11:33 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:418
+[01-Aug-2016 02:12:25 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 418
+[01-Aug-2016 02:12:25 UTC] PHP Stack trace:
+[01-Aug-2016 02:12:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:12:25 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:12:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:12:25 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:12:25 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:12:25 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:418
+[01-Aug-2016 02:12:29 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 418
+[01-Aug-2016 02:12:29 UTC] PHP Stack trace:
+[01-Aug-2016 02:12:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:12:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:12:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:12:29 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:12:29 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:12:29 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:418
+[01-Aug-2016 02:13:02 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 418
+[01-Aug-2016 02:13:02 UTC] PHP Stack trace:
+[01-Aug-2016 02:13:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:13:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:13:02 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:13:02 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:13:02 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:13:02 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:418
+[01-Aug-2016 02:13:05 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 418
+[01-Aug-2016 02:13:05 UTC] PHP Stack trace:
+[01-Aug-2016 02:13:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:13:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:13:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:13:05 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:13:05 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:13:05 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:418
+[01-Aug-2016 02:14:26 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 418
+[01-Aug-2016 02:14:26 UTC] PHP Stack trace:
+[01-Aug-2016 02:14:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:14:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:14:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:14:26 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:14:26 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:14:26 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:418
+[01-Aug-2016 02:18:54 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 429
+[01-Aug-2016 02:18:54 UTC] PHP Stack trace:
+[01-Aug-2016 02:18:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:18:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:18:54 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:18:54 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:18:54 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:18:54 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:429
+[01-Aug-2016 02:19:37 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 429
+[01-Aug-2016 02:19:37 UTC] PHP Stack trace:
+[01-Aug-2016 02:19:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:19:37 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:19:37 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:19:37 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:19:37 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:19:37 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:429
+[01-Aug-2016 02:19:57 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 429
+[01-Aug-2016 02:19:57 UTC] PHP Stack trace:
+[01-Aug-2016 02:19:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:19:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:19:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:19:57 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:19:57 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:19:57 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:429
+[01-Aug-2016 02:21:11 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 429
+[01-Aug-2016 02:21:11 UTC] PHP Stack trace:
+[01-Aug-2016 02:21:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:21:11 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:21:11 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:21:11 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:21:11 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:21:11 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:429
+[01-Aug-2016 02:25:12 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 429
+[01-Aug-2016 02:25:12 UTC] PHP Stack trace:
+[01-Aug-2016 02:25:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:25:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:25:12 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:25:12 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:25:12 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:25:12 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:429
+[01-Aug-2016 02:27:36 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 429
+[01-Aug-2016 02:27:36 UTC] PHP Stack trace:
+[01-Aug-2016 02:27:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:27:36 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:27:36 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:27:36 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:27:36 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:27:36 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:429
+[01-Aug-2016 02:46:18 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/MVC/EasyMVC/models/database.php on line 428
+[01-Aug-2016 02:46:18 UTC] PHP Stack trace:
+[01-Aug-2016 02:46:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 02:46:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 02:46:18 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:46:18 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 02:46:18 UTC] PHP   5. database->get_category_Rows() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:174
+[01-Aug-2016 02:46:18 UTC] PHP   6. PDOStatement->execute() /home/ubuntu/workspace/MVC/EasyMVC/models/database.php:428
+[01-Aug-2016 03:17:44 UTC] PHP Parse error:  syntax error, unexpected 'e' (T_STRING) in /home/ubuntu/workspace/MVC/EasyMVC/views/shopping/category_result.php on line 189
+[01-Aug-2016 03:17:44 UTC] PHP Stack trace:
+[01-Aug-2016 03:17:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/MVC/EasyMVC/index.php:0
+[01-Aug-2016 03:17:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/MVC/EasyMVC/index.php:9
+[01-Aug-2016 03:17:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18}() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 03:17:44 UTC] PHP   4. IndexController->get_category_page() /home/ubuntu/workspace/MVC/EasyMVC/core/App.php:18
+[01-Aug-2016 03:17:44 UTC] PHP   5. Controller->view() /home/ubuntu/workspace/MVC/EasyMVC/controllers/IndexController.php:177

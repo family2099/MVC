@@ -1,80 +1,4 @@
-<?php 
 
-/********************************
- * 只剩這頁還未修改完成MVC
- *******************************/
-
-//---------------------------------------------------------
-// 讀取資料庫的 $_SESSION['database'] 資料表的全部紀錄
-//---------------------------------------------------------
-
-// 最大的列數
-$page = 0;
-$rowsPerPage = 10;
-
-// 選擇 MySQL 資料庫
-  try{
-			$db = new PDO("mysql:host=localhost;dbname=test", "root", "");
-			
-			$db->exec("SET CHARACTER SET utf8");
-	} 
-	catch (PDOException $e) {
-	     echo 'Error!: ' . $e->getMessage() . '<br />';
-	}
-	
-  $query = "SELECT * FROM " . $_SESSION['database'] .  
-  	" WHERE category = '" . $_SESSION['category'] . "' AND " . 
-  	" category_type = '" . $_SESSION['category_type'] . "' ORDER BY publishdate DESC";
-	
-	$result = $db->prepare($query);
-
-	//print_r($data);
-// 傳回目前頁的結果集
-	$result->execute();
-	
-	//$db=null;
-	
-	
-	//echo $totalRows;
-	if($result)
-	{
-		// 結果集的記錄筆數
-		$totalRows = $result->rowCount();
-		// 總頁數,ceil() 函數向上捨入為最接近的整數(就是有小數點就直接進位)。
-		$totalPages = ceil($totalRows / $rowsPerPage);
-		// echo $totalRows;
-	}
-
-/*-----------------------------------------------------
-	 讀取test資料庫的computer_books資料表10筆紀錄
-	-----------------------------------------------------*/
-	
-	// 目前頁的開始編號變數
-	$startRow = $page * $rowsPerPage;
-	// echo $startRow;
-	// 從目前頁的開始編號查詢
-	//sprintf() 函數把格式化的字串寫入一個變數中
-	$current_query = sprintf("%s LIMIT %d, %d", $query, $startRow, $rowsPerPage);
-	// echo $current_query;
-	$result = $db->prepare($current_query);
-	//var_dump($result);
-	$result->execute();
-	//var_dump($result);
-	// 目前頁的記錄筆數
-	if ($result) {	
-		$rowsOfCurrentPage = $result->rowCount();
-		//echo $rowsOfCurrentPage;
-		
-	}
-	
-
-
-//-----------------------------------------------------
-// 讀取庫ch30資料庫的computer_books資料表的目前頁的紀錄
-//-----------------------------------------------------
-
-
-?>
 <!DOCTYPE html>
 
 <head>
@@ -117,9 +41,9 @@ $rowsPerPage = 10;
 
 							<!-- List group -->
 							<ul class="list-group" id="showcomp">
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/0/0" class="computer">網頁設計</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/0/1" class="computer">程式語言</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/0/2" class="computer">多媒體系列</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/0/0/0" class="computer">網頁設計</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/0/1/0" class="computer">程式語言</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/0/2/0" class="computer">多媒體系列</a></li>
 
 							</ul>
 						</div>
@@ -131,9 +55,9 @@ $rowsPerPage = 10;
 
 							<!-- List group -->
 							<ul class="list-group" id="showedu">
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/1/0" class="education">影像多媒體</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/1/1" class="education">電腦繪圖</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/1/2" class="education">工具軟體</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/1/0/0" class="education">影像多媒體</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/1/1/0" class="education">電腦繪圖</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/1/2/0" class="education">工具軟體</a></li>
 
 							</ul>
 						</div>
@@ -145,9 +69,9 @@ $rowsPerPage = 10;
 
 							<!-- List group -->
 							<ul class="list-group" id="showbus">
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/2/0" class="business">作業系統</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/2/1" class="business">防毒防駭</a></li>
-								<li class="list-group-item"><a href="/EasyMVC/Index/get_category_page/2/2" class="business">文書處理</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/2/0/0" class="business">作業系統</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/2/1/0" class="business">防毒防駭</a></li>
+								<li class="list-group-item"><a href="/MVC/EasyMVC/Index/get_category_page/2/2/0" class="business">文書處理</a></li>
 
 							</ul>
 						</div>
@@ -176,10 +100,10 @@ $rowsPerPage = 10;
 					//-----------------------------
 					// 有書籍的紀錄
 					//-----------------------------
-					if ($rowsOfCurrentPage)
+					if ($data[3])
 					{
 						//echo $rowsOfCurrentPage;
-						while($row=$result->fetch(PDO::FETCH_ASSOC))
+						for($i=0;$i<$data[3];$i++)
 						{
 							//echo $row['id'];
 							//var_dump($row);
@@ -190,38 +114,38 @@ $rowsPerPage = 10;
 									
 									<tr>
 											<span >
-												<a href="/EasyMVC/Index/get_item_detail/<?php echo $row['id']; ?>"><img src="<?php echo "/EasyMVC/views/shopping/photo/item/" . $row['photo']; ?>" width="120" height="145" /></a>
+												<a href="/MVC/EasyMVC/Index/get_item_detail/<?php echo $data[4][$i]['id']; ?>"><img src="<?php echo "/MVC/EasyMVC/views/shopping/photo/item/" . $data[4][$i]['photo']; ?>" width="120" height="145" /></a>
 											</span >
 											<br />
 											<span >
-												<a href="/EasyMVC/Index/get_item_detail/<?php echo $row['id']; ?>" >
-												<?php echo mb_substr($row['title'],0,12,"utf-8");  ?>
+												<a href="/MVC/EasyMVC/Index/get_item_detail/<?php echo $data[4][$i]['id']; ?>" >
+												<?php echo mb_substr($data[4][$i]['title'],0,12,"utf-8");  ?>
 												</a>
 											</span >
 											<br /> 
 											作者 :
 											<span >
-					                        <?php echo $row['author']; ?>
+					                        <?php echo $data[4][$i]['author']; ?>
 					                      	</span>
 					                      	
 											<br /> 
 											發行日 :
 											<span >
-					                        <?php echo date("Y年n月", strtotime($row['publishdate'])); ?>
+					                        <?php echo date("Y年n月", strtotime($data[4][$i]['publishdate'])); ?>
 					                      	</span>
 											<br /> 
 											原價 :
 											<span >
-												<?php echo $row['price']; ?> 元
+												<?php echo $data[4][$i]['price']; ?> 元
 					                      	</span>
 											<br />
 											特價
 											<span >
-						                        <?php echo $row['discount']; ?> 折 
-						                        <?php echo $row['saleprice']; ?> 元
+						                        <?php echo $data[4][$i]['discount']; ?> 折 
+						                        <?php echo $data[4][$i]['saleprice']; ?> 元
 					                      	</span>
 											<br />
-											<a href="/EasyMVC/Index/add_to_cart/<?php echo $row['id']; ?>" class="btn btn-danger btn-lg" role="button">放入購物車</a>
+											<a href="/MVC/EasyMVC/Index/add_to_cart/<?php echo $data[4][$i]['id']; ?>" class="btn btn-danger btn-lg" role="button">放入購物車</a>
 											
 										</td>
 									</tr>
@@ -242,44 +166,44 @@ $rowsPerPage = 10;
 				<table class="index_style4">
 				    <tr>
 				      <td class="index_style5">
-				        資料筆數 ： <?php echo $totalRows ?> 
+				        資料筆數 ： <?php echo $data[1]; ?> 
 				      </td>
 				      <td class="index_style5">
-				        共分 <?php echo $totalPages; ?> 頁
+				        共分 <?php echo $data[2]; ?> 頁
 				      </td>
 				      <td class="index_style5">
-				        每頁 <?php echo $rowsPerPage; ?> 筆
+				        每頁 10 筆
 				      </td>
 				      <td class="index_style6">
 							  <?php 
-								  if ($page > 0) {
+								  if ($data[0] > 0) {
 							  ?>
-				            <a href="<?php printf("%s?page=%d", $_SERVER["PHP_SELF"], 0); ?>" class="index_style7">首頁 /</a>
+				            <a href="/MVC/EasyMVC/Index/get_category_page/<?php echo $data[5];?>/<?php echo $data[6];?>/0" class="index_style7">首頁 /</a>
 								<?php 
 									}
 								?>
 				        <?php 
-								  if ($page > 0) {
+								  if ($data[0] > 0) {
 							  ?>
 							 <!--max() 返回最大值 -->
-				            <a href="<?php printf("%s?page=%d", $_SERVER["PHP_SELF"], max(0, $page - 1)); ?>" 
+				            <a href="/MVC/EasyMVC/Index/get_category_page/<?php echo $data[5];?>/<?php echo $data[6];?>/<?php echo max(0, $data[0] - 1); ?>" 
 				              class="index_style7">上頁 /</a>        
 				        <?php 
 									}
 								?>
-								第 <?php echo $page + 1; ?> 頁
+								第 <?php echo $data[0] + 1; ?> 頁
 				    		<?php 
-								  if ($page < $totalPages - 1) {				
+								  if ($data[0] < $data[2] - 1) {				
 								?>
-				            <a href="<?php printf("%s?page=%d", $_SERVER["PHP_SELF"], min($totalPages - 1, $page + 1)); ?>" 
+				            <a href="/MVC/EasyMVC/Index/get_category_page/<?php echo $data[5];?>/<?php echo $data[6];?>/<?php echo min($data[2] - 1, $data[0] + 1); ?>" 
 				              class="index_style7"> / 下頁</a>
 				        <?php 
 									}
 								?>
 								<?php 
-								  if ($page < $totalPages - 1) {				
+								  if ($data[0] < $data[2] - 1) {				
 								?>
-				            <a href="<?php printf("%s?page=%d", $_SERVER["PHP_SELF"], $totalPages - 1); ?>" class="index_style7"> / 末頁</a>
+				            <a href="/MVC/EasyMVC/Index/get_category_page/<?php echo $data[5];?>/<?php echo $data[6];?>/<?php echo $data[2] - 1; ?>" class="index_style7"> / 末頁</a>
 				        <?php 
 									}
 								?>

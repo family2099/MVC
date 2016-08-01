@@ -27,5 +27,5 @@ $_SESSION['item']['order_index'] = NULL;
 unset($_SESSION['item']['order_index']);
 
 // 回到首頁
-header("/EasyMVC/Index/get_Index/0");
+header("/MVC/EasyMVC/Index/get_Index/0");
 ?>

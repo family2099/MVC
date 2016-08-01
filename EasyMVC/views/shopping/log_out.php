@@ -35,5 +35,5 @@
 	$_SESSION['item']['order_index'] = NULL;
 	unset($_SESSION['item']['order_index']);
 
-	header("Location: /EasyMVC/Index/get_Index/0");
+	header("Location: /MVC/EasyMVC/Index/get_Index/0");
 ?>

@@ -52,7 +52,7 @@ $day = $date['mday'];
 			  <div class="panel-body">
 					<div class="row">
 			    		
-			    			<form action="/EasyMVC/member_center/update_member_data" method="post" onkeydown="if(event.keyCode==13) return false;"> 
+			    			<form action="/MVC/EasyMVC/member_center/update_member_data" method="post" onkeydown="if(event.keyCode==13) return false;"> 
 						        <table class="member_info_style4">
 						          <tr>
 						            <td class="member_info_style5">
@@ -200,7 +200,7 @@ $day = $date['mday'];
 						                 <td class="member_info_style2">
 						                   <input type="submit" value="確定送出"  />
 						                   <input type="button" value="取消" class="member_info_style15" 
-						                     onclick="document.location='/EasyMVC/Index/get_member_center'; return false;" />
+						                     onclick="document.location='/MVC/EasyMVC/Index/get_member_center'; return false;" />
 						                 </td>
 						               </tr>
 						             </table> 
